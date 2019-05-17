@@ -139,12 +139,6 @@
     merge-options "^1.0.1"
     sequelize "4.43.0"
 
-"@fabrix/spool-tapestries@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@fabrix/spool-tapestries/-/spool-tapestries-1.6.0.tgz#ec12fd8879432bb0ffd5d2c312788449978c1ecc"
-  dependencies:
-    lodash "^4.17.10"
-
 "@fabrix/spool-winston@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@fabrix/spool-winston/-/spool-winston-1.6.0.tgz#13ff69356a4204457ccb6a88bbb930aadc51b888"
@@ -1329,7 +1323,7 @@ lodash.flattendeep@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
 
-lodash@^4.17.0, lodash@^4.17.1, lodash@^4.17.10, lodash@^4.17.11:
+lodash@^4.17.0, lodash@^4.17.1, lodash@^4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
