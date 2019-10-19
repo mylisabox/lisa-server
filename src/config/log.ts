@@ -8,11 +8,13 @@
 import * as winston from 'winston'
 
 export const log = {
-    level: 'silly',
+    level: 'debug',
+    exitOnError: true,
+    format: winston.format.combine(
+        winston.format.colorize({all: true}),
+        winston.format.cli(),
+    ),
     transports: [
-        new winston.transports.Console({
-            // prettyPrint: false,
-            // colorize: false
-        })
+        new winston.transports.Console()
     ]
 }
