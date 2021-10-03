@@ -1,0 +1,687 @@
+{
+  "name": "Media Center",
+  "freeStates": {
+    "MUTE_VOLUME": {
+      "name": "Mute volume",
+      "sentences": {
+        "fr": [
+          "coupe le son(?: +\\w+){0,3} +%device%",
+          "coupe le son",
+          "coupe le volume(?: +\\w+){0,3} +%device%",
+          "coupe le volume",
+          "silence"
+        ],
+        "en": [
+          "mute volume(?: +\\w+){0,3} +%device%",
+          "mute volume",
+          "silence(?: +\\w+){0,3} +%device%",
+          "silence"
+        ],
+        "ru": [
+          "выключить звук(?: +\\w+){0,3} +%device%",
+          "выключить звук",
+          "заглушить(?: +\\w+){0,3} +%device%",
+          "заглушить"
+        ]
+      }
+    },
+    "UNMUTE_VOLUME": {
+      "name": "Return volume",
+      "sentences": {
+        "fr": [
+          "remets le son(?: +\\w+){0,3} +%device%",
+          "remets le son",
+          "remets le volume(?: +\\w+){0,3} +%device%",
+          "remets le volume"
+        ],
+        "en": [
+          "unmute volume(?: +\\w+){0,3} +%device%",
+          "unmute sound(?: +\\w+){0,3} +%device%",
+          "restore sound(?: +\\w+){0,3} +%device%",
+          "restore volume(?: +\\w+){0,3} +%device%",
+          "unmute volume",
+          "unmute sound",
+          "restore sound",
+          "restore volume"
+        ],
+        "ru": [
+          "включить звук(?: +\\w+){0,3} +%device%",
+          "восстановить звук(?: +\\w+){0,3} +%device%",
+          "включить звук",
+          "восстановить звук"
+        ]
+
+      }
+    },
+    "SET_VOLUME": {
+      "sentences": {
+        "fr": [
+          "(?:met|mets|mettre) le (?:son|volume) à %number% de %device%",
+          "(?:met|mets|mettre) le (?:son|volume) à %number%"
+        ],
+        "en": [
+          "set(?: +\\w+){0,3} +(?:volume|sound) to %number% of %device%",
+          "set(?: +\\w+){0,3} +(?:volume|sound) to %number%"
+        ],
+        "ru": [
+          "устоновить(?: +\\w+){0,3} +(?:громкость|звук) на %number% of %device%",
+          "установить(?: +\\w+){0,3} +(?:громкость|звук) на %number%"
+        ]
+      }
+    },
+    "INCREASE_VOLUME": {
+      "sentences": {
+        "fr": [
+          "(?:monte|augmente) le (?:son|volume) de %number%(?: +\\w+){0,3} +%device%",
+          "(?:monte|augmente) le (?:son|volume) de %number%",
+          "(?:monte|augmente) le (?:son|volume)(?: +\\w+){0,3} +%device%",
+          "(?:monte|augmente) le (?:son|volume)",
+          "plus fort(?: +\\w+){0,3} +%device%",
+          "plus fort",
+          "plus fort de %number%(?: +\\w+){0,3} +%device%",
+          "plus fort de %number%"
+        ],
+        "en": [
+          "increase(?: +\\w+){0,3} +(?:volume|sound) by %number%",
+          "increase(?: +\\w+){0,3} +(?:volume|sound)",
+          "louder by %number%",
+          "louder"
+        ],
+        "ru": [
+          "увеличить(?: +\\w+){0,3} +(?:громкость|звук) на %number%",
+          "увеличить(?: +\\w+){0,3} +(?:громкость|звук)",
+          "громче на %number%",
+          "громче"
+        ]
+      }
+    },
+    "DECREASE_VOLUME": {
+      "sentences": {
+        "fr": [
+          "(?:baisse|réduit) le (?:volume|son) de %number%",
+          "(?:baisse|réduit) le (?:volume|son)",
+          "moins fort",
+          "moins fort de %number%"
+        ],
+        "en": [
+          "decrease(?: +\\w+){0,3} +(?:volume|sound) by %number%",
+          "decrease(?: +\\w+){0,3} +(?:volume|sound)",
+          "turn down the (?:volume|sound) by %number%",
+          "turn down the (?:volume|sound)"
+        ],
+        "ru": [
+          "уменьшить(?: +\\w+){0,3} +(?:громкость|звук) by %number%",
+          "уменьшить(?: +\\w+){0,3} +(?:громкость|звук)",
+          "тише (?:громкость|звук) на %number%",
+          "тише (?:громкость|звук)",
+          "тише"
+        ]
+
+      }
+    },
+    "NEXT_SONG": {
+      "name": "Next song",
+      "sentences": {
+        "fr": [
+          "prochaine chanson dans(?: +\\w+){0,2} +%room%",
+          "prochaine chanson sur %device%",
+          "prochaine chanson",
+          "chanson suivante dans(?: +\\w+){0,2} +%room%",
+          "chanson suivante sur %device%",
+          "chanson suivante"
+        ],
+        "en": [
+          "next song in(?: +\\w+){0,2} +%room%",
+          "next song on %device%",
+          "next song"
+        ],
+        "ru": [
+          "следующая песня(?: +\\w+){0,2} +%room%",
+          "следующая песня на %device%",
+          "следующая песня"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PREVIOUS_SONG": {
+      "name": "Previous song",
+      "sentences": {
+        "fr": [
+          "chanson précédente dans(?: +\\w+){0,2} +%room%",
+          "chanson précédente sur %device%",
+          "chanson précédente"
+        ],
+        "en": [
+          "previous song in(?: +\\w+){0,2} +%room%",
+          "previous song on %device%",
+          "previous song"
+        ],
+        "ru": [
+          "предыдущая песня в(?: +\\w+){0,2} +%room%",
+          "предыдущая песня на %device%",
+          "предыдущая песня"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PLAY_SONG": {
+      "name": "Play song",
+      "sentences": {
+        "fr": [
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la (?:chanson|musique) %song% sur %device%",
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la (?:chanson|musique) %song% dans (?:le|la) %room%",
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la (?:chanson|musique) %song%"
+        ],
+        "en": [
+          "play(?: +\\w+){0,5} +song %song% on %device% in (?: +\\w+){0,2} +%room%",
+          "play(?: +\\w+){0,5} +song %song% in (?: +\\w+){0,2} +%room%",
+          "play(?: +\\w+){0,5} +song %song%"
+        ],
+        "ru": [
+          "играть(?: +\\w+){0,5} +песню %song% на %device% в (?: +\\w+){0,2} +%room%",
+          "играть(?: +\\w+){0,5} +песню %song% на (?: +\\w+){0,2} +%room%",
+          "играть(?: +\\w+){0,5} +песню %song%"
+        ]
+
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PLAY_PLAYLIST": {
+      "name": "Play playlist",
+      "sentences": {
+        "fr": [
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la playlist %playlist% sur %device%",
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la playlist %playlist% dans (?:le|la) %room%",
+          "(?:play|lance|joue)(?: +\\w+){0,5} +la playlist %playlist%"
+        ],
+        "en": [
+          "play(?: +\\w+){0,5} +playlist %playlist% on %device%",
+          "play(?: +\\w+){0,5} +playlist %playlist% in (?: +\\w+){0,2} +%room%",
+          "play(?: +\\w+){0,5} +playlist %playlist%"
+        ],
+        "ru": [
+          "играть(?: +\\w+){0,5} +список %playlist% на %device%",
+          "играть(?: +\\w+){0,5} +список %playlist% на (?: +\\w+){0,2} +%room%",
+          "играть(?: +\\w+){0,5} +список %playlist%"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PLAY_MOVIE": {
+      "name": "Play movie",
+      "sentences": {
+        "fr": [
+          "(?:play|lance|joue)(?: +\\w+){0,5} +film %movie% dans (?:le|la) %room%",
+          "(?:play|lance|joue)(?: +\\w+){0,5} +film %movie%"
+        ],
+        "en": [
+          "play(?: +\\w+){0,5} +movie %movie%in (?: +\\w+){0,2} +%room%",
+          "play(?: +\\w+){0,5} +movie %movie%"
+        ],
+        "ru": [
+          "играть(?: +\\w+){0,5} +видео %movie%in (?: +\\w+){0,2} +%room%",
+          "играть(?: +\\w+){0,5} +видео %movie%"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PLAY_TV_SHOW": {
+      "name": "Play tv show",
+      "sentences": {
+        "fr": [
+          "(?:play|lance|joue)(?: +\\w+){0,5} +série %show% dans (?:le|la) %room%",
+          "(?:play|lance|joue)(?: +\\w+){0,6} +série %show%",
+          "(?:play|lance|joue) l'épisode %number_episode%(?: +\\w+){0,2} +série %show%(?: +\\w+){0,2} +%room%",
+          "(?:play|lance|joue) l'épisode %number_episode%(?: +\\w+){0,2} +série %show%",
+          "(?:play|lance|joue) l'épisode %number_episode%(?: +\\w+){0,2} +saison %number_season%(?: +\\w+){0,2} +série %show%(?: +\\w+){0,2} +%room%",
+          "(?:play|lance|joue) l'épisode %number_episode%(?: +\\w+){0,2} +saison %number_season%(?: +\\w+){0,2} +série %show%",
+          "(?:play|lance|joue) l'épisode %number_episode%(?: +\\w+){0,2} +saison %number_season%(?: +\\w+){0,2} +de %show%"
+        ],
+        "en": [
+          "play(?: +\\w+){0,5} +show %show%in (?: +\\w+){0,2} +%room%",
+          "play(?: +\\w+){0,6} +show %show%",
+          "play episode %number_episode%(?: +\\w+){0,2} +show %show%(?: +\\w+){0,2} +%room%",
+          "play episode %number_episode%(?: +\\w+){0,2} +show %show%",
+          "play season %number_season% episode %number_episode%(?: +\\w+){0,2} +show %show%(?: +\\w+){0,2} +%room%",
+          "play season %number_season% episode %number_episode%(?: +\\w+){0,2} +show %show%",
+          "play season %number_season% episode %number_episode%(?: +\\w+){0,2} +of %show%"
+        ],
+        "ru": [
+          "играть(?: +\\w+){0,5} +шоу %show% в (?: +\\w+){0,2} +%room%",
+          "играть(?: +\\w+){0,6} +шоу %show%",
+          "играть епизод %number_episode%(?: +\\w+){0,2} +шоу %show%(?: +\\w+){0,2} +%room%",
+          "играть епизод %number_episode%(?: +\\w+){0,2} +шоу %show%",
+          "играть сезон %number_season% епизод %number_episode%(?: +\\w+){0,2} +шоу %show%(?: +\\w+){0,2} +%room%",
+          "играть сезон %number_season% епизод %number_episode%(?: +\\w+){0,2} +шоу %show%",
+          "играть сезон %number_season% епизод %number_episode%(?: +\\w+){0,2} + %show%"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "L'épisode est en route"
+        ],
+        "en": [
+          "The show is launched"
+        ],
+        "ru": [
+          "Шоу запущено"
+        ]
+      }
+    },
+    "PAUSE_MEDIA_CENTER": {
+      "name": "Pause",
+      "sentences": {
+        "fr": [
+          "(?:pause|pose)(?: +\\w+){0,5} +lecture(?: +\\w+){0,2} +%room%",
+          "(?:pause|pose)(?: +\\w+){0,5} +lecture",
+          "(?:mettre|met|mets|mais) pause"
+        ],
+        "en": [
+          "pause(?: +\\w+){0,5} +media center(?: +\\w+){0,2} +%room%",
+          "pause(?: +\\w+){0,5} +media center"
+        ],
+        "ru": [
+          "поставить на паузу(?: +\\w+){0,5} +медиацент(?: +\\w+){0,2} +%room%",
+          "поставить на паузу(?: +\\w+){0,5} +медицентр"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "STOP_MEDIA_CENTER": {
+      "name": "Stop",
+      "sentences": {
+        "fr": [
+          "(?:stop|stoppe)(?: +\\w+){0,5} +lecture(?: +\\w+){0,2} +%room%",
+          "(?:stop|stoppe)(?: +\\w+){0,5} +lecture"
+        ],
+        "en": [
+          "stop(?: +\\w+){0,5} +media center(?: +\\w+){0,2} +%room%",
+          "stop(?: +\\w+){0,5} +media center"
+        ],
+        "ru": [
+          "выключить(?: +\\w+){0,5} +медиацентр(?: +\\w+){0,2} +%room%",
+          "выключить(?: +\\w+){0,5} +медицентр"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "PLAY_MEDIA_CENTER": {
+      "name": "Play",
+      "sentences": {
+        "fr": [
+          "(?:play|lance|relance|joue)(?: +\\w+){0,2} +lecture(?: +\\w+){0,2} +%room%",
+          "(?:play|lance|relance|joue)(?: +\\w+){0,2} +lecture"
+        ],
+        "en": [
+          "play(?: +\\w+){0,5} +media center",
+          "play(?: +\\w+){0,5} +media center(?: +\\w+){0,2} +%room%"
+        ],
+        "ru": [
+          "запустить(?: +\\w+){0,5} +медицентр",
+          "запустить(?: +\\w+){0,5} +медиацентр(?: +\\w+){0,2} +%room%"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "SET_SOURCE": {
+      "name": "Set source",
+      "sentences": {
+        "fr": [
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:source|mode) %text_source% %number_index%(?: +\\w+){0,2} +%room%",
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:source|mode) %text_source% %number_index%",
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:source|mode) %text_source%(?: +\\w+){0,2} +%room%",
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:source|mode) %text_source%"
+        ],
+        "en": [
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:source|mode) %text_source% %number_index%(?: +\\w+){0,2} +%room%",
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:source|mode) %text_source% %number_index%",
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:source|mode) %text_source%(?: +\\w+){0,2} +%room%",
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:source|mode) %text_source%"
+        ],
+        "ru": []
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    },
+    "SET_CHANNEL": {
+      "name": "Set channel",
+      "sentences": {
+        "fr": [
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:canal|mode) %number_channel%(?: +\\w+){0,2} +%room%",
+          "(?:passe|mettre|met|mais|mes)(?: +\\w+){0,3} +(?:canal|mode) %number_channel%"
+        ],
+        "en": [
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:channel|mode) %number_channel%(?: +\\w+){0,2} +%room%",
+          "(?:put|set|switch|change)(?: +\\w+){0,3} +(?:channel|mode) %number_channel%"
+        ],
+        "ru": []
+      },
+      "responses": {
+        "fr": [
+          "Voila",
+          "C'est fait"
+        ],
+        "en": [
+          "Done",
+          "It's done"
+        ],
+        "ru": [
+          "Сделано",
+          "Исполнено"
+        ]
+      }
+    }
+  },
+  "nestedStates": {
+    "DECREASE_VOLUME_AGAIN": {
+      "name": "Decrease volume again",
+      "responses": {
+        "fr": [
+          "voulez baisser plus ?"
+        ],
+        "en": [
+          "do you want to decrease more ?"
+        ],
+        "ru": [
+          "Еще тише?"
+        ]
+      }
+    },
+    "NEXT_SONG_AGAIN": {
+      "name": "Next sound again",
+      "responses": {
+        "fr": [
+          "voulez vous aussi passer celle-ci ?"
+        ],
+        "en": [
+          "do you want to skip this one too ?"
+        ],
+        "ru": [
+          "Дальше?"
+        ]
+      }
+    },
+    "PREVIOUS_SONG_AGAIN": {
+      "name": "Previous sound again",
+      "responses": {
+        "fr": [
+          "voulez vous aussi passer celle-ci ?"
+        ],
+        "en": [
+          "do you want to skip this one too ?"
+        ],
+        "ru": [
+          "Дальше?"
+        ]
+      }
+    },
+    "INCREASE_VOLUME_AGAIN": {
+      "name": "Increase volume again",
+      "responses": {
+        "fr": [
+          "voulez vous monter plus ?"
+        ],
+        "en": [
+          "do you want to increase more ?"
+        ],
+        "ru": [
+          "Еще громче ?"
+        ]
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "INCREASE_VOLUME",
+      "to": "INCREASE_VOLUME_AGAIN",
+      "sentences": {
+        "fr": [
+          "encore"
+        ],
+        "en": [
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "INCREASE_VOLUME_AGAIN",
+      "to": "INCREASE_VOLUME_AGAIN",
+      "sentences": {
+        "fr": [
+          "%acceptance%",
+          "encore"
+        ],
+        "en": [
+          "%acceptance%",
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "DECREASE_VOLUME",
+      "to": "DECREASE_VOLUME_AGAIN",
+      "sentences": {
+        "fr": [
+          "encore"
+        ],
+        "en": [
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "DECREASE_VOLUME_AGAIN",
+      "to": "DECREASE_VOLUME_AGAIN",
+      "sentences": {
+        "fr": [
+          "%acceptance%",
+          "encore"
+        ],
+        "en": [
+          "%acceptance%",
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "NEXT_SONG_AGAIN",
+      "to": "NEXT_SONG_AGAIN",
+      "sentences": {
+        "fr": [
+          "%acceptance%",
+          "encore"
+        ],
+        "en": [
+          "%acceptance%",
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "PREVIOUS_SONG_AGAIN",
+      "to": "PREVIOUS_SONG_AGAIN",
+      "sentences": {
+        "fr": [
+          "%acceptance%",
+          "encore"
+        ],
+        "en": [
+          "%acceptance%",
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "NEXT_SONG",
+      "to": "NEXT_SONG_AGAIN",
+      "sentences": {
+        "fr": [
+          "encore"
+        ],
+        "en": [
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    },
+    {
+      "from": "PREVIOUS_SONG",
+      "to": "PREVIOUS_SONG_AGAIN",
+      "sentences": {
+        "fr": [
+          "encore"
+        ],
+        "en": [
+          "again"
+        ],
+        "ru": [
+          "Снова",
+          "Еще"
+        ]
+      }
+    }
+  ]
+}

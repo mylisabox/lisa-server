@@ -1,0 +1,97 @@
+{
+  "name": "Personality",
+  "freeStates": {
+    "LISA_CAN_YOU_HEAR": {
+      "name": "Hearing_Check",
+      "sentences": {
+        "fr": [
+          "Est-ce que tu m'entends",
+          "Est-ce que tu es là",
+          "tu es là"
+        ],
+        "en": [
+          "can you hear me",
+          "are you there"
+        ],
+        "ru": [
+          "Ты меня слышишь?",
+          "Ты тут?"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "5 sur 5",
+          "Parfaitement"
+        ],
+        "en": [
+          "Yes",
+          "loud and clear"
+        ],
+        "ru": [
+          "Да",
+          "Четко и разборчиво"
+        ]
+      }
+    },
+    "LISA_HELLO": {
+      "name": "Hello",
+      "sentences": {
+        "fr": [
+          "(?:bonjour|hello|salut|bonsoir)"
+        ],
+        "en": [
+          "(?:hello|morning)"
+        ],
+        "ru": [
+          "(?:Привет|Доброе утро)"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "Salut",
+          "Bonjour"
+        ],
+        "en": [
+          "Hello",
+          "hi"
+        ],
+        "ru": [
+          "Привет",
+          "Хай"
+        ]
+      }
+    },
+    "THANKS": {
+      "name": "Thank you",
+      "sentences": {
+        "fr": [
+          "(?:merci)"
+        ],
+        "en": [
+          "(?:thanks|thank you)"
+        ],
+        "ru": [
+          "(?:Спасибо)"
+        ]
+      },
+      "responses": {
+        "fr": [
+          "De rien",
+          "Pas de problème",
+          "A ton service"
+        ],
+        "en": [
+          "You're welcome",
+          "At your service",
+          "My pleasure",
+          "No problem"
+        ],
+        "ru": [
+          "Без проблем"
+        ]
+      }
+    }
+  },
+  "nestedStates": {},
+  "links": []
+}
