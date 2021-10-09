@@ -1,6 +1,6 @@
-import defaultBots from './bots/index.js';
-import Room from '../lib/rooms/models/room.js';
 import Device from '../lib/devices/models/device.js';
+import Room from '../lib/rooms/models/room.js';
+import defaultBots from './bots/index.js';
 
 const escapeRegExp = (text) => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 
@@ -60,9 +60,10 @@ export default {
       from: 'noreply@mylisabox.com',
     },
   },
-  chatbot: {
+  chatBot: {
     bots: defaultBots,
     allowAnonymousUsers: true,
+    hooks: {},
     defaultLang: (process.env.LANG || 'en').substr(0, 2),
     defaultAnswer: (app, data) => {
       data.action = 'UNKNOWN';

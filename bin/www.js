@@ -27,10 +27,14 @@ app.server = server;
 
 (async () => {
   try {
+    logger.info('Setting up database..');
     await database.sync({force: false});
     logger.info('Database is setup.');
-    await services.chatBotService.init(config.chatbot.bots);
+    logger.info('Setting up chatbots..');
+    await services.chatBotService.init(config.chatBot.bots);
     logger.info('Chat bots are loaded.');
+    logger.info('Setting up plugins..');
+    //await services.pluginService.refreshPlugins();
     await services.pluginService.loadPlugins();
     logger.info('Plugins are loaded.');
 

@@ -3,6 +3,11 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-bose-soundtouch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-cam-mjpeg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-hue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-ir" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-kodi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-sony-vpl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugins/lisa-plugin-voice" vcs="Git" />
   </component>
 </project>

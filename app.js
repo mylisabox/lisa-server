@@ -11,7 +11,7 @@ import removeNull from "./lib/common/utils/stripedJSON.js";
 
 const __dirname = path.resolve();
 global.appRoot = path.resolve(__dirname);
-const storageAvatar = multer({dest: path.join(global.appRoot, 'public/uploads/')});
+const storageAvatar = multer({dest: path.join(global.appRoot, 'assets/public/uploads/')});
 const storageVoiceConfig = multer({
     storage: multer.diskStorage({
         destination: function (req, file, cb) {
@@ -42,8 +42,8 @@ app.use(function (req, res, next) {
 });
 app.use(bodyParser());
 app.use(express.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/avatar', express.static(path.join(__dirname, 'public/uploads')));
+app.use(express.static(path.join(__dirname, 'assets/public')));
+app.use('/avatar', express.static(path.join(__dirname, 'assets/public/uploads')));
 app.use(function (req, res, next) {
     res.setHeader('X-Powered-By', 'L.I.S.A.');
     next();
