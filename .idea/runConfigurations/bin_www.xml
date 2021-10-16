@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="bin/www" type="NodeJSConfigurationType" node-parameters="--trace-deprecation" path-to-js-file="bin/www.js" working-dir="$PROJECT_DIR$">
+  <configuration default="false" name="bin/www" type="NodeJSConfigurationType" application-parameters="--enable-voice-commands" node-parameters="--trace-deprecation" path-to-js-file="bin/www.js" working-dir="$PROJECT_DIR$">
     <envs>
       <env name="DEBUG" value="lisa-server:*" />
     </envs>

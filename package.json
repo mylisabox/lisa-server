@@ -15,28 +15,27 @@
     "ejs": "^3.1.6",
     "enpeem": "^2.2.0",
     "express": "^5.0.0-alpha.8",
-    "http-proxy-middleware": "^2.0.1",
     "jsonwebtoken": "^8.5.1",
-    "lisa-discovery": "^1.0.4",
-    "lisa-lirc": "0.0.1",
+    "lisa-discovery": "^1.1.1",
+    "lisa-lirc": "^0.0.1",
     "lodash-es": "^4.17.21",
     "mdns-js": "^1.0.3",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "multer": "^1.4.3",
-    "nodemailer": "^6.6.3",
+    "nodemailer": "^6.7.0",
     "query-string": "^7.0.1",
-    "sequelize": "^6.6.5",
+    "sequelize": "^6.7.0",
     "sqlite3": "^5.0.2",
     "uuid": "^8.3.2",
     "winston": "^3.3.3",
-    "ws": "^8.2.1"
+    "ws": "^8.2.3"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-config-google": "^0.14.0"
   },
   "optionalDependencies": {
-    "lisa-speaker-polly": "^1.0.5",
-    "lisa-standalone-voice-command": "^1.0.15"
+    "lisa-speaker-polly": "^1.1.0",
+    "lisa-standalone-voice-command": "^1.1.0"
   }
 }

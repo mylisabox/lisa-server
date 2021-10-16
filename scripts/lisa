@@ -1,0 +1,51 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          lisa
+# Required-Start:    avahi-daemon alsa-utils $all
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: lisa server
+# Description:       lisa server
+### END INIT INFO
+
+#export AUDIODEV=mic_channel8 #for pi3 and matrix board
+#export LANG=en-US #force env lang constant
+
+case "$1" in
+  start)
+    echo "Starting L.I.S.A."
+    rm /var/log/lisa*
+    cd /var/www/lisa-server/
+    NODE_ENV=production PORT_HTTP=80 PORT=443 forever start --uid "lisa" -l /var/log/lisa.log bin/www.js --enable-voice-commands
+    ;;
+  stop)
+    echo "Stopping L.I.S.A."
+    forever stop lisa
+    ;;
+  reload|force-reload|restart)
+    /etc/init.d/lisa stop
+    /etc/init.d/lisa start
+    ;;
+  update)
+    /etc/init.d/lisa stop
+    cd /var/www/lisa-box
+    git pull
+    npm i --only=prod --unsafe-perm
+    sh ./scripts/plugins.sh
+    /etc/init.d/lisa start
+    ;;
+  status)
+    if (forever list | grep lisa); then
+      echo "L.I.S.A. is running"
+    else
+      echo "L.I.S.A. is not running"
+    fi
+    ;;
+  *)
+    echo "Usage: /etc/init.d/lisa {start|stop|reload|force-reload|restart|status|update}"
+    exit 1
+    ;;
+esac
+
+exit 0
