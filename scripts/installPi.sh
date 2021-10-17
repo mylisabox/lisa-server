@@ -77,7 +77,7 @@ do
 done
 
 cd /etc/init.d/
-wget https://raw.githubusercontent.com/mylisabox/lisa-box/master/scripts/lisa
+wget https://raw.githubusercontent.com/mylisabox/lisa-server/main/scripts/lisa
 chmod 755 /etc/init.d/lisa
 update-rc.d lisa defaults
 

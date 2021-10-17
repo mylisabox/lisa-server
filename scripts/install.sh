@@ -14,7 +14,7 @@ apt-get update && apt-get install -y firmware-brcm80211 pi-bluetooth wpasupplica
 apt-get install -y nano curl git unzip
 
 #install node
-curl -sL https://deb.nodesource.com/setup_10.x | bash -
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 
 #install yarn
