@@ -6,10 +6,10 @@ for plugin in "${plugins[@]}"
 do
      cd /var/www/lisa-server/plugins || exit
      if [ ! -d ${plugin} ]; then
-        echo "plugin not installed, ignoring"
-        #echo "Cloning ${plugin}"
-        #git clone "https://github.com/mylisabox/${plugin}"
-        #cd ${plugin} || exit
+        echo "$plugin not installed, ignoring"
+        echo "Cloning ${plugin}"
+        git clone "https://github.com/mylisabox/${plugin}"
+        cd ${plugin} || exit
      else
         echo "${plugin} already exist, updating"
         cd ${plugin} || exit
