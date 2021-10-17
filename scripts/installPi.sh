@@ -55,8 +55,8 @@ git clone https://github.com/mylisabox/lisa-server
 
 cd lisa-server
 
-yarn
-yarn global add forever
+npm i --only=prod --unsafe-perm
+npm i -g --only=prod forever
 
 plugins=('lisa-plugin-hue' 'lisa-plugin-kodi' 'lisa-plugin-ir' 'lisa-plugin-voice' 'lisa-plugin-cam-mjpeg' 'lisa-plugin-sony-vpl' 'lisa-plugin-bose-soundtouch')
 
@@ -73,7 +73,7 @@ do
         git pull
      fi
      echo "Installing deps ${plugin}"
-     yarn
+     npm i --only=prod --unsafe-perm
 done
 
 cd /etc/init.d/
