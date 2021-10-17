@@ -36,6 +36,6 @@
   },
   "optionalDependencies": {
     "lisa-speaker-polly": "^1.1.0",
-    "lisa-standalone-voice-command": "^1.1.0"
+    "lisa-standalone-voice-command": "^1.1.1"
   }
 }
