@@ -306,4 +306,5 @@ fabric.properties
 
 # yarn v2
 
-!/config/speech/Hé lisa.pmdl
+config/speech/Hé lisa.pmdl
+identifier
