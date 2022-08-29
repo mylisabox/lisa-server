@@ -5,7 +5,7 @@
       "name": "Turn all lights off",
       "sentences": {
         "fr": [
-          "(?:éteins|éteint|éteindre) toutes les lumières"
+          "(?:éteins|éteint|éteindre|est un) toutes les lumières"
         ],
         "en": [
           "turn all lights off",
@@ -14,7 +14,7 @@
         "ru": [
           "Выключить весь свет",
           "Выключить все светильники"
-        ]        
+        ]
       },
       "responses": {
         "fr": [
@@ -28,7 +28,7 @@
         "ru": [
           "Свет выключен",
           "Готово"
-        ]        
+        ]
       }
     },
     "LIGHT_TURN_ON": {
@@ -82,16 +82,16 @@
         "ru": [
           "Свет включен",
           "Готово"
-        ]                
+        ]
       }
     },
     "LIGHT_TURN_OFF": {
       "name": "Turn light off",
       "sentences": {
         "fr": [
-          "(?:éteins|éteint|éteindre) (?:la|les) lumière",
-          "(?:éteins|éteint|éteindre)(?: +\\w+){0,2} +lumière(?: +\\w+){0,2} +%room%",
-          "(?:éteins|éteint|éteindre)(?: +\\w+){0,4} +%room%"
+          "(?:éteins|éteint|éteindre|est un) (?:la|les) lumière",
+          "(?:éteins|éteint|éteindre|est un)(?: +\\w+){0,2} +lumière(?: +\\w+){0,2} +%room%",
+          "(?:éteins|éteint|éteindre|est un)(?: +\\w+){0,4} +%room%"
         ],
         "en": [
           "(?:turn|switch) (?:light|lights) off",
@@ -102,7 +102,7 @@
           "(?:выключи|потуши) (?:светильник|светильники) off",
           "(?:выключи|потуши) (?: +\\w+){0,2} +%room%",
           "(?:выключи|потуши)(?: +\\w+){0,2} +%room%"
-        ]        
+        ]
       },
       "responses": {
         "fr": [
@@ -116,7 +116,7 @@
         "ru": [
           "Свет выключен",
           "Готово"
-        ]        
+        ]
       }
     },
     "LIGHT_BRIGHTNESS": {
@@ -138,7 +138,7 @@
           "яркость(?: +\\w+){0,5} +%room% на %number%(?:percent|%)",
           "яркость(?: +\\w+){0,5} +%number%(?:percent|%)"
         ]
-        
+
       },
       "responses": {
         "fr": [
